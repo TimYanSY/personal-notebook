@@ -15,4 +15,4 @@ MongoClient.connect(db.url, (err, database) => {
     console.log(`open localhost:${port}`);
   });
 })
-app.use(express.static('./note-book/build'))
+app.use(express.static(__dirname + '/note-book/build'))
